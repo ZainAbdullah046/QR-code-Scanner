@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pretty_qr_code/pretty_qr_code.dart';
 import 'package:qr_code_scanner_app/Scan.dart';
 
 class Generate extends StatefulWidget {
@@ -44,6 +45,7 @@ class _GenerateState extends State<Generate> {
                   });
                 },
               ),
+              if (qrdata != null) PrettyQrView.data(data: qrdata!),
             ],
           ),
         ));
