@@ -44,6 +44,7 @@ class _GenerateState extends State<Generate> {
                     qrdata = value;
                   });
                 },
+                decoration: const InputDecoration(hintText: "Type the link"),
               ),
               if (qrdata != null) PrettyQrView.data(data: qrdata!),
             ],

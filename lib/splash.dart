@@ -11,7 +11,7 @@ class Splash extends StatefulWidget {
 
 class _MyWidgetState extends State<Splash> with TickerProviderStateMixin {
   late final AnimationController _controller =
-      AnimationController(duration: const Duration(seconds: 1), vsync: this)
+      AnimationController(duration: const Duration(seconds: 2), vsync: this)
         ..repeat();
 
   @override
